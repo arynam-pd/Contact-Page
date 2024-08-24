@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(90deg, #07233b 1.67%, #041d34 39.95%, #04192d 58.24%, #040e18 80.28%, #050c16 101.48%);
+    color: white;
+    }
+
+    .container {
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 16px;
+        margin-top: 5rem;
+    }
+
+    .header {
+    background: linear-gradient(to bottom, #051b30, #0a2d4e);
+    border-color: #054178;
+    padding: 32px;
+    border-radius: 8px 8px 0 0;
+    display: flex;
+    gap: 16px;
+    }
+    .contactus-title h2 {
+        font-size: 2rem;
+        font-style: italic;
+        margin-bottom: 8px;
+    }
+
+    .contactus-title p {
+        font-size: 1rem;
+    }
+
+    .contactus-box {
+        background: linear-gradient(to right, #05335c, #043b69);
+        padding: 16px;
+        border-radius: 0 0 8px 8px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .contact-info {
+        flex: 1;
+        padding: 16px;
+    }
+
+    .contact-info label {
+        font-weight: bold;
+        color: gray;
+    }
+
+    .contact-info a {
+        color: white;
+        font-size: 1.1rem;
+        font-weight: bold;
+        display: block;
+        margin-top: 4px;
+    }
+
+    .contact-info{
+        display: flex;
+        flex-direction: column;
+        margin-top: 100%;
+        gap: 1rem;
+    }
+
+    .social-icons {
+        margin-top: 10px;
+        display: flex;
+        gap: 1rem;
+    }
+
+    .social-icons a img {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+    }
+
+    .social-icons-links {
+        text-decoration: none;
+    }
+
+    .contactus-form {
+        flex: 2;
+        padding: 16px 16px 0 16px;
+        margin-top: 1rem;
+    }
+
+    .form-group{
+        background: #6d8ead53;
+        border: 1px solid #0f82ed;
+        padding: 8px;
+        border-radius: 4px;
+        margin-bottom: 16px;
+        color: rgba(245, 245, 245, 0.91);
+    }
+
+    .form-group-outer{
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+    }
+
+    .form-group-outer-2{
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+        width: 50%;
+    }
+
+    .form-group2 {
+        background: #6d8ead53;
+        border: 1px solid #0f82ed;
+        padding: 8px;
+        border-radius: 4px;
+        margin-bottom: 16px;
+        color: rgba(245, 245, 245, 0.91);
+    }
+
+    .form-group:focus,
+    .form-group2:focus {
+        font-weight: bold;
+        color: white;
+    }
+
+    .form-group2 {
+        height: 128px;
+    }
+
+    .send button {
+        width: 100%;
+        background-color: #0f82ed;
+        color: white;
+        padding: 12px;
+        border: none;
+        border-radius: 50px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .send button:hover {
+        background-color: #0d6fcc;
+    }
+
+    .contact-banner {
+        max-width: 20%;
+        max-height: 70px;
+        display: flex;
+        align-items: center;
+    }
+
+    .contact-banner img {
+        max-width: 100%;
+        width: 20rem;
+        height: 15rem;
+        border-radius: 8px;
+        margin-top: 60%;
+    }
+
+    .contact-info-outer{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .top-form-group{
+        display: flex; 
+        flex-direction: row; 
+        gap: 1rem;
+    }
+
+     @media (max-width: 768px) {
+        .header {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .contact-info{
+            margin-top: 0%;
+        }
+
+        .contact-banner {
+            display: none;
+        }
+
+        .contactus-box {
+            flex-direction: column;
+        }
+
+        .contact-info-outer {
+            order: 2;
+        }
+
+        .form-group-outer-2{
+            width: 100%;
+        }
+
+        .contactus-form {
+            order: 1;
+        }
+
+        .top-form-group {
+            flex-direction: column;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .container {
+            padding: 8px;
+            margin-top: 3rem;
+        }
+
+        .header {
+            padding: 16px;
+        }
+
+        .contactus-title h2 {
+            font-size: 1.5rem;
+        }
+
+        .contactus-title p {
+            font-size: 0.875rem;
+        }
+
+        .contact-info {
+            margin-top: 16px;
+        }
+
+        .social-icons a img {
+            width: 25px;
+            height: 25px;
+        }
+
+        .send button {
+            padding: 10px;
+        }
+    }
+
+
+  </style>
+</head>
+<body>
+    <section id="contactus" class="section">
+        <div class="container">
+            <div class="header">
+                <div class="contact-banner">
+                    <img src="https://raw.githubusercontent.com/hasibul-hasan-shuvo/hasibul-hasan-shuvo/main/images/coding-boy.gif" alt="Profile Picture">
+                </div>
+                <div class="contactus-title">
+                    <h2>Let’s Discuss Your Task</h2>
+                    <p>Join me in a conversation filled with technology and science & feel free to contact me.</p>
+                </div>
+            </div>
+
+            <div class="contactus-box">
+            <div class="contact-info-outer">
+                <div> </div>
+                <div class="contact-info">
+                    <div>
+                        <label>Write an e-mail</label>
+                        <a class="social-icons-links" href="mailto:pranavdharme10@gmail.com">pranavdharme10@gmail.com</a>
+                    </div>
+                    <div>
+                        <label>Call Here</label>
+                        <a class="social-icons-links" href="tel:+91---">+91 --- --- ----</a>
+                    </div>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/yogesh.bari.1069" target="_blank">
+                            <img src="https://github.com/Pranav-Programmer/Image-Directory/blob/main/Portfolio/fb.png?raw=true" alt="Facebook">
+                        </a>
+                        <a href="https://www.linkedin.com/in/pranav-dharme/" target="_blank">
+                            <img src="https://github.com/Pranav-Programmer/Image-Directory/blob/main/Portfolio/lin.png?raw=true" alt="LinkedIn">
+                        </a>
+                        <a href="https://www.instagram.com/pranav_dharme_/" target="_blank">
+                            <img src="https://github.com/Pranav-Programmer/Image-Directory/blob/main/Portfolio/insta.png?raw=true" alt="Instagram">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+                <div class="contactus-form">
+                    <form id="contact-form" onsubmit="sendEmail(event)">
+                        <div class="top-form-group">
+                        <div class="form-group-outer-2">
+                            <label>YOUR NAME</label>
+                            <input class="form-group" name="name" placeholder="Name*" required>
+                        </div>
+                        <div class="form-group-outer-2">
+                            <label>YOUR EMAIL</label>
+                            <input class="form-group" name="email" placeholder="Email*" type="email" required>
+                        </div>
+                        </div>
+                        <div class="form-group-outer">
+                            <label>ABOUT YOU</label>
+                            <input class="form-group" name="about" placeholder="About*" required>
+                        </div>
+                        <div class="form-group-outer">
+                            <label>SUBJECT</label>
+                            <input class="form-group" name="subject" placeholder="Subject*" required>
+                        </div>
+                        <div class="form-group-outer">
+                            <label>YOUR MESSAGE</label>
+                            <textarea class="form-group2" name="message" placeholder="Your message*" rows="4" required></textarea>
+                        </div>
+                        <div class="send">
+                            <button type="submit">SEND MESSAGE</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script type="text/javascript">
+  (function(){
+    emailjs.init({
+      publicKey: "YGNYceF3vB1zC4aT_",
+    });
+  })();
+
+  document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const form = event.target;
+    const formData = new FormData(form);
+    const submitButton = form.querySelector('button[type="submit"]');
+
+    submitButton.textContent = "SENDING MESSAGE...";
+    submitButton.disabled = true;
+
+    emailjs.sendForm('service_1rjd4jt', 'template_96pgakh', form)
+      .then(function() {
+        submitButton.textContent = "SENT SUCCESSFULLY";
+
+        setTimeout(function() {
+          submitButton.textContent = "SEND MESSAGE";
+          submitButton.disabled = false;
+        }, 2000);
+
+        form.reset();
+      }, function(error) {
+        console.error('Failed to send message:', error.text);
+        submitButton.textContent = "SEND MESSAGE";
+        submitButton.disabled = false;
+        alert("Failed to send message. Please try again.");
+      });
+  });
+</script>
+</body>
+</html>
